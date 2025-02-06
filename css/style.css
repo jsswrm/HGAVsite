@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.flex-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: aqua;
+    height: 10vh;
+}
+
+div.flex-header-button {
+    height: 5vh;
+    width: 15vw;
+}
+
+div.overmijcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: aqua;
+    height: 85vh;
+}
+
+div.overmijcontainer2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: aqua;
+    height: 85vh;
+}
+
+
+div.overmijcontainer-inhoud{
+   width: 45vw;
+   height: 70vh;
+   padding: 2%;
+}
+
+div.title-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: aqua;
+    height: 10vh;
+}
