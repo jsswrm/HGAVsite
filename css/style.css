@@ -4,12 +4,17 @@
     box-sizing: border-box;
 }
 
+div.spacer{
+    height: 10vh;
+}
+
 div.flex-header{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: aqua;
     height: 10vh;
+    width: 100vw;
+    position: fixed;
 }
 
 div.flex-header-button {
@@ -21,29 +26,64 @@ div.overmijcontainer{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: aqua;
     height: 85vh;
 }
+
+div.overmijcontainer-inhoud{
+    width: 45vw;
+    height: 70vh;
+    padding: 2%;
+ }
 
 div.overmijcontainer2{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: aqua;
     height: 85vh;
 }
 
-
-div.overmijcontainer-inhoud{
-   width: 45vw;
-   height: 70vh;
-   padding: 2%;
+div.carousel{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 85vh;
 }
+
+div.placeholder{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 85vh;
+}
+
+div.placeholder2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 65vh;
+}
+
+div.placeholder2-inhoud{
+    width: 45vw;
+    height: 50vh;
+    padding: 2%;
+ }
 
 div.title-box{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: aqua;
     height: 10vh;
+}
+
+div.contactstrip{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10vh;
+}
+
+div.contactstrip-button {
+    height: 5vh;
+    width: 15vw;
 }
