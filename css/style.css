@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #0d0d0d;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 div.spacer{
     height: 10vh;
 }
@@ -81,6 +87,16 @@ div.contactstrip{
     align-items: center;
     justify-content: space-evenly;
     height: 10vh;
+}
+
+#map1{
+    height: 50vh;
+    width: 45vw;
+}
+
+#maplibre{
+    height: 50vh;
+    width: 45vw;
 }
 
 div.contactstrip-button {
