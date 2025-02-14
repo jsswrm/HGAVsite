@@ -17,7 +17,7 @@ div.spacer{
 div.flex-header{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: left;
     height: 10vh;
     width: 100vw;
     position: fixed;
@@ -25,19 +25,20 @@ div.flex-header{
 
 div.flex-header-button {
     height: 5vh;
-    width: 15vw;
+    width: 7vw;
+    margin: 2.2vw;
 }
 
 div.overmijcontainer{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    height: 85vh;
+    height: 90vh;
 }
 
 div.overmijcontainer-inhoud{
-    width: 45vw;
-    height: 70vh;
+    width: 30vw;
+    height: 85vh;
     padding: 2%;
  }
 
@@ -80,6 +81,7 @@ div.title-box{
     align-items: center;
     justify-content: space-evenly;
     height: 10vh;
+    font-size: 3vw;
 }
 
 div.contactstrip{
@@ -100,6 +102,9 @@ div.contactstrip{
 }
 
 div.contactstrip-button {
+    display: flex;
     height: 5vh;
     width: 15vw;
+    justify-content: space-around;
+    align-items: center;
 }
