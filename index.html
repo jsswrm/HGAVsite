@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link href="css/style.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>      
@@ -8,8 +9,8 @@
         <script src="https://unpkg.com/maplibre-gl@^5.1.0/dist/maplibre-gl.js"></script>
         <link href="https://unpkg.com/maplibre-gl@^5.1.0/dist/maplibre-gl.css" rel="stylesheet" />
     </head>
-    <body>
-        <div class="flex-header">
+    <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="-500">
+        <!--<div class="flex-header">
             <div class="flex-header-button" style="background-color:paleturquoise ;">
 
             </div>
@@ -19,61 +20,116 @@
             <div class="flex-header-button" style="background-color: palegoldenrod;">
 
             </div>
-        </div>
+        </div>-->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" style="height: 10vh;">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#overmij">Over mij</a></li>
+                <li class="nav-item"><a class="nav-link" href="#resultaten">Resultaten</a></li>
+                <li class="nav-item"><a class="nav-link" href="#lessen">Lessen</a></li>
+
+            </nav>
         <div class="spacer">
 
         </div>
-        <div class="overmijcontainer">
+        <div id="overmij" class="overmijcontainer">
             <div class="overmijcontainer-inhoud" style="background-color: #f2f2f2;">
                 <p>
-                    halkjwpijdejfe
+                    Over mij
                 </p>
             </div>
             <div class="overmijcontainer-inhoud" style="background-color:#f2f2f2;">
                 <p>
-                    hduhqfhejshfjjj
+                    Over mijn studie
                 </p>
             </div>
             <div class="overmijcontainer-inhoud" style="background-color:#f2f2f2;">
                 <p>
-                    hduhqfhejshfjjj
+                    FOTO
                 </p>
             </div>
         </div>
+        <div  id="overmij" class="spacer"></div>
         <div class="overmijcontainer2">
             <div class="overmijcontainer-inhoud" style="background-color: #f2f2f2;">
                 <p>
-                    halkjwpijdejfe
+                    Over het vak
                 </p>
             </div>
             <div id="button" class="overmijcontainer-inhoud" style="background-color: #f2f2f2;">
                 <p>
-                    hduhqfhejshfjjj
+                    Foto
                 </p>
             </div>
             <div id="button" class="overmijcontainer-inhoud" style="background-color: #f2f2f2;">
                 <p>
-                    hduhqfhejshfjjj
+                    Foto 2
                 </p>
             </div>
         </div>
-        <div class="spacer"></div>
+        <div id="overmij" class="spacer"></div>
         <div class="title-box" style="background-color: #f2f2f2;"> 
             <p>
                 Resultaten
             </p>
         </div>
-        <div class="carousel" style="background-color: darkgray;">
-            <p> [placeholder]</p>
-        </div>
-        <div class="spacer"></div>
+
+
+
+<!-- Slideshow container -->
+<div id="resultaten" class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="img/hoeheoheo.png" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="img/761d3516-ae31-41cf-bf01-6f419998302a.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="img/8d34ad32-1637-490b-8327-aed93d3f4750.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  
+
+
+
+        <div id="lessen" class="spacer"></div>
         <div class="title-box" style="background-color: #f2f2f2;"> 
             <p>
-                Lessen 
+                Les 1
             </p>
         </div>
-        <div class="placeholder" style="background-color: darkgray;">
-            <div>[placeholder]</div>
+        <div class="lessen" style="background-color: darkgray;">
+            <div class="lessen-inhoud" style="background-color: cadetblue;">[placeholder]</div>
+            <div class="lessen-inhoud" style="background-color: blanchedalmond;"> AH</div>
+        </div>
+        <div class="lessen" style="background-color: darkgray;">
+            <div class="lessen-inhoud" style="background-color: cadetblue;">[placeholder]</div>
+            <div class="lessen-inhoud" style="background-color: blanchedalmond;"> AH</div>
+        </div>
+        <div class="lessen" style="background-color: darkgray;">
+            <div class="lessen-inhoud" style="background-color: cadetblue;">[placeholder]</div>
+            <div class="lessen-inhoud" style="background-color: blanchedalmond;"> AH</div>
         </div>
         <div class="spacer"></div>
         <div class="title-box" style="background-color: #f2f2f2;">
@@ -89,7 +145,14 @@
             <div class="contactstrip-button" style="background-color: white;"><p>Instagram</p></div>
             <div class="contactstrip-button" style="background-color: white;"><p>Aeres</p></div>
         </div>
+        <div class="contactstrip" style="background-color: #f2f2f2;">
+            <div class="contactstrip-button" style="background-color: white;"><p>Email</p></div>
+            <div class="contactstrip-button" style="background-color: white;"><p>LinkedIn</p></div>
+            <div class="contactstrip-button" style="background-color: white;"><p>Instagram</p></div>
+            <button id="KleurButton">kleur</button>
+        </div>
         <div class="spacer"></div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>   
     </body>
 </html>
