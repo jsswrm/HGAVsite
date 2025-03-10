@@ -98,11 +98,22 @@ div.lessen{
 }
 
 div.lessen-inhoud{
-    width: 35vw;
-    height: 60vh;
-    padding: 2%;
-    margin: 1vw;
- }
+  width: 35vw;
+  height: 60vh;
+  padding: 2%;
+  margin: 1vw;
+}
+
+div.lessen-inhoud-img{
+  width: 35vw;
+  height: 60vh;
+}
+
+.lesimg{
+  width: 35vw;
+  height: 60vh;
+  object-fit: contain;
+} 
 
 div.placeholder2{
     display: flex;
