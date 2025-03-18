@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/*Selectie van font*/
+/*Selectie van font
 @font-face {
     font-family: 'Century Gothic';
     src: url('C:/Users/jesse/Desktop/School/HWUD/HWUD01/fonts/GOTHIC.eot');
@@ -23,10 +23,26 @@
          url('C:/Users/jesse/Desktop/School/HWUD/HWUD01/fonts/GOTHICB.ttf')  format('truetype'),
          url('C:/Users/jesse/Desktop/School/HWUD/HWUD01/fonts/GOTHICB.svg#Century Gothic') format('svg');
             }
+*/
 
 p{
     font-family:'Century Gothic';
     color: #0d0d0d;
+    font-size: x-large;
+}
+
+a{
+  font-family:'Century Gothic';
+  color: #0d0d0d;
+  font-size: x-large;
+}
+
+p.title{
+  font-size: xx-large;
+}
+
+p.content{
+  font-size: large;
 }
 
 div.spacer{
@@ -34,74 +50,74 @@ div.spacer{
 }
 
 div.flex-header{
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    height: 10vh;
-    width: 100vw;
-    position: fixed;
-    z-index: 1000;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  height: 10vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 1000;
     
 }
 
 .carousel{
-    position: relative; 
+  position: relative; 
 }
 
 #carouselimg{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 div.flex-header-button {
-    height: 5vh;
-    width: 7vw;
-    margin: 2.2vw;
+  height: 5vh;
+  width: 7vw;
+  margin: 2.2vw;
 }
 
 div.overmijcontainer{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 90vh;
 }
 
 div.overmijcontainer-inhoud{
-    width: 30vw;
-    height: 85vh;
-    padding: 2%;
+  width: 30vw;
+  height: 85vh;
+  padding: 2%;
  }
 
 div.overmijcontainer2{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 85vh;
+}
+
+div.lessen{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+}
+
+div.lessen-inhoud{
+width: 35vw;
+height: 60vh;
+padding: 2%;
+margin: 1vw;
 }
 
 .carousel-inner img {
     margin: auto;
-}
-
-div.lessen{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 75vh;
-}
-
-div.lessen-inhoud{
-  width: 35vw;
-  height: 60vh;
-  padding: 2%;
-  margin: 1vw;
 }
 
 div.lessen-inhoud-img{

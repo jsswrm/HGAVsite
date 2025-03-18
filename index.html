@@ -10,17 +10,7 @@
         <link href="https://unpkg.com/maplibre-gl@^5.1.0/dist/maplibre-gl.css" rel="stylesheet" />
     </head>
     <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="150">
-        <!--<div class="flex-header">
-            <div class="flex-header-button" style="background-color:paleturquoise ;">
 
-            </div>
-            <div class="flex-header-button" style="background-color: palevioletred;">
-
-            </div>
-            <div class="flex-header-button" style="background-color: palegoldenrod;">
-
-            </div>
-        </div>-->
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" style="height: 10vh;">
               <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="#overmij">Over mij</a></li>
@@ -29,89 +19,30 @@
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
 
             </nav>
-        <div class="spacer">
+        
+        <div class="spacer"></div>
 
-        </div>
         <div id="overmij" class="overmijcontainer">
             <div class="overmijcontainer-inhoud" style="background-color: #f2f2f2;">
-                <p>
+                <p class="title">
                     Over mij
                 </p>
-            </div>
-            <div class="overmijcontainer-inhoud" style="background-color:#f2f2f2;">
-                <p>
-                    Over mijn studie
+                <p class="content">
+                    Mijn naam is Jesse Warman, ik ben student op Aeres, waar ik de studie Geo Media & Design doe. Ik ben in jaar 3 van mijn opleiding. Ik hou mij tijdens de opleiding veel bezig met stedelijke ontwikkeling, en klimaatproblemen. Ook leer ik verschillende programma’s gebruiken, zoals ArcGIS, QGIS, FME en Adobe programma’s. Waar ik ook mee werk is HTML, CSS en JScript, voor webdevelopment. Deze website is daar een voorbeeld van. Hier zal ik een paar verschillende elementen laten zien die ik tijdens de lessen van Niene Boeijen heb geleerd. Ook zal ik kort vertellen over de inhoud van de verschillende lessen die wij van haar kregen over webdevelopment.
                 </p>
             </div>
             <div class="overmijcontainer-inhoud" style="background-color:#f2f2f2;">
-                <p>
-                    FOTO
+                <p class="title">
+                    Over het vak
                 </p>
+                <p class="content">
+                    Het vak HGAV07 wat wij hebben gekregen, werd gegeven door Niene Boeijen, een gastdocent op Aeres. Ze heeft haar eigen bedrijf waar ze werkt als web cartograaf. Ook is zij voorzitter bij OSGEO NL. Dit betekent dat ze meer dan geschikt is om ons meer te leren over webdevelopment en vooral de link tussen het web en cartografie. Tijdens de lessen hebben we onder andere geleerd op welke verschillende manieren webmaps werken, hoe wij deze kunnen toevoegen aan onze site en hoe we ze kunnen bewerken voor onze eigen doeleinden. Als laatste hebben we wat basiskennis gekregen op het gebied van JavaScript, en wat gevorderde kennis van hoe dit toegepast kan worden op webmaps.
+                </p>
+                <a href="https://nieneb.nl/online-projects/" >Website van Niene Boeijen</a>
             </div>
         </div>
         <div  id="overmij" class="spacer"></div>
-        <div class="overmijcontainer2">
-            <div class="overmijcontainer-inhoud" style="background-color: #f2f2f2;">
-                <p>
-                    Over het vak
-                </p>
-            </div>
-            <div id="button" class="overmijcontainer-inhoud" style="background-color: #f2f2f2;">
-                <p>
-                    Foto
-                </p>
-            </div>
-            <div id="button" class="overmijcontainer-inhoud" style="background-color: #f2f2f2;">
-                <p>
-                    Foto 2
-                </p>
-            </div>
-        </div>
         <div id="overmij" class="spacer"></div>
-        <div class="title-box" style="background-color: #f2f2f2;"> 
-            <p>
-                Resultaten
-            </p>
-        </div>
-
-
-
-<!-- Slideshow container -->
-<div id="resultaten" class="slideshow-container">
-
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="img/hoeheoheo.png" style="width:100%">
-      <div class="text">Caption Text</div>
-    </div>
-  
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="img/761d3516-ae31-41cf-bf01-6f419998302a.jpg" style="width:100%">
-      <div class="text">Caption Two</div>
-    </div>
-  
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="img/8d34ad32-1637-490b-8327-aed93d3f4750.jpg" style="width:100%">
-      <div class="text">Caption Three</div>
-    </div>
-  
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
-  
-  <!-- The dots/circles -->
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
-  
-
 
 
         <div id="lessen" class="spacer"></div>
@@ -122,15 +53,48 @@
             </p>
         </div>
         <div class="lessen">
-            <div class="lessen-inhoud">[placeholder]</div>
+            <div class="lessen-inhoud">
+                <p>
+                    Tijdens deze les begonnen we met het definieren van verschillende begrippen, die in de lessen aan bod zouden komen. De volgende definities heb ik geschreven op basis van verschillende bronnen, waaronder Google, ChatGPT en eigen inzicht.
+                </p>
+                <p style="font-size: small;">
+                    Kaart - Symbolische weergave van een fysiek gebied, vaak met locatiegebonden data over dit gebied.
+                    <br>Cartografie - Het maken, bijhouden en publiceren van kaarten.
+                    <br>Geo Design - Een methode om verschillende factoren visueel weer te geven om hiermee geografisch gebonden problemen op te kunnen lossen.
+                    <br>Design - Het weergeven van bepaalde informatie of data op een bruikbare, duidelijke en visueel aantrekkelijke manier, afgestemd op de doelgroep.
+                    <br>3D Model - Een model van een bepaakd object of omgeving, virtueel in 3d gezet.
+                    <br>3D Visualisatie - Het weergeven van bepaalde informatie of data op een bruikbare, duidelijke en visueel aantrekkelijke manier, in een virtuele 3D omgeving, afgestemd op de doelgroep.
+                    <br>Augmented Reality - Interactieve visualisatie van een bepaalde ervaring, zo weergegeven dat het samenhangt met de realiteit.
+                    <br>Virtual Reality - Virtuele 3D omgeving waar iemand met behulp van bijvoorbeeld een VR bril in kan zien en kan interageren met deze omgeving.
+                    <br>Geo Dashboard - Een weergave van verschillende geo visualisaties waarmee je overzicht kan houden over deze verschillende kaarten, omgevingen of andere producten.
+                    <br>Data Visualisatie - Het weergeven van bepaalde informatie of data op een bruikbare, duidelijke en visueel aantrekkelijke manier.
+                </p>
+
+            </div>
             <div class="lessen-inhoud-img"><img class="lesimg" src="img/Capture3.JPG"></div>
         </div>
         <div class="lessen">
-            <div class="lessen-inhoud">[placeholder]</div>
+            <div class="lessen-inhoud">
+                <p>
+                    Ook hebben we ChatGPT gevraagd een aantal begrippen te definiëren. Dit deden we met de prompt  “Define (begrip) in 3 sentences.”.
+                </p>
+                <p style="font-size: small;">
+                    <br>Geo-visualization is the use of visual tools to represent geographic data, helping to reveal patterns and trends in location-based information. It combines maps, charts, and other visuals to make complex data easier to understand. This technique is widely used in fields like urban planning, marketing, and environmental science.
+                    <br>Cartography is the art and science of creating maps to represent geographic areas. It involves designing, analyzing, and interpreting spatial data for various purposes. Cartographers use different techniques to ensure maps are accurate, informative, and visually appealing.
+                    <br>Geodesign is the process of using geographic data and design principles to create sustainable solutions for land use and urban planning. It combines spatial analysis, modeling, and collaboration to evaluate the impacts of design decisions. This approach helps ensure informed, data-driven choices for more effective planning and development.
+                </p>
+            </div>
             <div class="lessen-inhoud-img"><img class="lesimg" src="img/Capture.JPG"></div>
         </div>
         <div class="lessen">
-            <div class="lessen-inhoud">[placeholder]</div>
+            <div class="lessen-inhoud">
+                <p>
+                    Ook hebben we DeepAI wat afbeeldingen laten genereren, deze zijn rechts van de tekst te zien. 
+                </p>
+                <p style="font-size: small;">
+                    De prompts waren: “Generate a map.”,”Generate a cartographer.” en “Generate a geo-designer.”
+                </p>
+            </div>
             <div class="lessen-inhoud-img"><img class="lesimg" src="img/Capture2.JPG"></div>
         </div>
 
@@ -140,13 +104,20 @@
             </p>
         </div>
         <div class="lessen">
-            <div class="lessen-inhoud">[placeholder]</div>
-            <div class="lessen-inhoud-img" style="background-color: bisque;"> <img class="lesimg" src="img/Gitscreenshot.JPG"> </div>
+            <div class="lessen-inhoud">
+                <p>
+                    Tijdens deze les zijn we begonnen met het ontwikkelen van de website, ook hebben we een GitHub opgezet. Dit is een handig programma waarmee je makkelijk je versies kan bijhouden en publiceren. 
+                </p>
+                <p style="font-size: small;">
+                    Hier rechts kan je zien hoe dit programma eruit ziet. Je kan hier alle oudere versies terug vinden, en terughalen. Als je uiteindelijk tevreden bent met je bestanden, kan je ze pushen, en zijn ze op het platform van GitHub online te vinden. Ik heb hier tijdens het ontwikkelen alle veranderingen bijgehouden en gemarkeerd.
+                </p>
+            </div>
+            <div class="lessen-inhoud-img"> <img class="lesimg" src="img/Gitscreenshot.JPG"> </div>
         </div>
         <div class="lessen">
             <div class="lessen-inhoud">[placeholder]</div>
             <div class="lessen-inhoud-img">
-                    <img class="lesimg" src="img/wireframe.jpg">
+                    <img class="lesimg" src="img/Artboard 1.png">
             </div>
         </div>
 
@@ -204,10 +175,10 @@
             <div class="contactstrip-button" style="background-color: white;"><p>Email</p></div>
             <div class="contactstrip-button" style="background-color: white;"><p>LinkedIn</p></div>
             <div class="contactstrip-button" style="background-color: white;"><p>Instagram</p></div>
-            <button id="KleurButton">kleur</button>
+            <div id="KleurButton" class="contactstrip-button" style="background-color: white;"><p>Kleur</p></div>
         </div>
         <div class="spacer"></div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>   
+        <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>-->   
     </body>
 </html>
