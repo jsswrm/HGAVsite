@@ -1,11 +1,4 @@
-var selectedbutton = document.querySelector("#button");
 
-selectedbutton.addEventListener("click", CLickAlert);
-
-function CLickAlert()
-{
-    alert("button clicked!")
-}
        
 const map1 = L.map('map1').setView([52.527193, 5.434349], 15);
 
@@ -32,7 +25,7 @@ const backgroundMap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z
 map.on('load' , function(){
   console.log(map.getStyle())
 
-  map.setPaintProperty('Water','fill-color','#009ffa');
+  map.setPaintProperty('Water','fill-color','#000000');
 
 })
 
@@ -42,44 +35,81 @@ selectedbutton.addEventListener("click", KleurVerander);
 
 function KleurVerander()
 {
-    map.setPaintProperty('Water','fill-color','#ffff00')
+    map.setPaintProperty('Water','fill-color','#7fe3e1')
 }
 
 
 map.addControl(new maplibregl.FullscreenControl({container: document.querySelector('body')}));
 
 
+var url = 'https://api.pdok.nl/bzk/locatieserver/search/v3_1/lookup?id=gem-f1fb925080efcfb275a372b8a43d6502&fl=*'
+fetch(url)
+.then(response => response.json())
+.then(data =>{
+  console.log(data.response.docs[0].geometrie_ll)
+  var mijnWKT = data.response.docs[0].geometrie_ll
+  var mijnGEOJSON = Terraformer.wktToGeoJSON(mijnWKT);
 
+ 
+  map.on('load', function() {
+    map.addSource('Lelystad',{
+      'type': 'geojson',
+      'data': mijnGEOJSON
+    });
+  
+    map.addLayer({
+      'id': 'geojson-polygon',
+      'type': 'line',
+      'source': 'Lelystad',
+      'layout': {},
+      'paint': {
+          'line-color': '#000000',
+      }
+    });
+  })
+})
 
-
-
-
-
-let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+var mijnGEOJSON = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              5.441378517749655,
+              52.52302646182872
+            ],
+            [
+              5.441378517749655,
+              52.49036489532182
+            ],
+            [
+              5.502788498567725,
+              52.49036489532182
+            ],
+            [
+              5.502788498567725,
+              52.52302646182872
+            ],
+            [
+              5.441378517749655,
+              52.52302646182872
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      }
+    }
+  ]
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
+
+
+
+
+
+

@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/*Selectie van font
+
 @font-face {
     font-family: 'Century Gothic';
     src: url('C:/Users/jesse/Desktop/School/HWUD/HWUD01/fonts/GOTHIC.eot');
@@ -23,12 +23,16 @@
          url('C:/Users/jesse/Desktop/School/HWUD/HWUD01/fonts/GOTHICB.ttf')  format('truetype'),
          url('C:/Users/jesse/Desktop/School/HWUD/HWUD01/fonts/GOTHICB.svg#Century Gothic') format('svg');
             }
-*/
+
 
 p{
     font-family:'Century Gothic';
     color: #0d0d0d;
-    font-size: x-large;
+    font-size: xx-large;
+}
+
+.smallfont{
+  font-size: medium;
 }
 
 a{
@@ -161,12 +165,12 @@ div.contactstrip{
 
 #map1{
     height: 50vh;
-    width: 45vw;
+    width: 25vw;
 }
 
 #maplibre{
     height: 50vh;
-    width: 45vw;
+    width: 25vw;
 }
 
 div.contactstrip-button {
@@ -177,6 +181,10 @@ div.contactstrip-button {
     align-items: center;
 }
 
+.imgsmall{
+  width: 150px;
+  object-fit: contain;
+}
 
 
 
