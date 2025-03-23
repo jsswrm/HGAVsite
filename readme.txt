@@ -1,1 +1,1 @@
-hoi
+Nieuwe versie van de site staat in andere repository op mijn account! Zo kon ik hem ook online zetten.
