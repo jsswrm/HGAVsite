@@ -28,7 +28,7 @@
 p{
     font-family:'Century Gothic';
     color: #0d0d0d;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 .smallfont{
@@ -114,10 +114,13 @@ div.lessen{
 }
 
 div.lessen-inhoud{
+display: flex;
+flex-direction: column;
 width: 35vw;
 height: 60vh;
 padding: 2%;
 margin: 1vw;
+justify-content: center;
 }
 
 .carousel-inner img {
